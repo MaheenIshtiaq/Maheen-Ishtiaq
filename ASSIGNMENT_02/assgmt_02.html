@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ER Diagram</title>
+    <link rel="stylesheet" href="er-diagram.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Branch Entity -->
+    <div class="entity">Branch</div>
+    <div class="h-line"></div>
+    <!-- Works at Relationship -->
+    <div class="relationship" data-text="Works At"></div>
+    <div class="h-line"></div>
+    <!-- Employee Entity -->
+    <div class="entity">Employee</div>
+</div>
+
+<!-- Connection Line to "Manages" -->
+<div class="container">
+    <div class="line"></div>
+</div>
+
+<div class="container">
+    <!-- Employee Attributes -->
+    <div class="attribute">Employee ID</div>
+    <div class="attribute">Name</div>
+    <div class="attribute">Position</div>
+</div>
+
+<!-- Connection Line to "Applies For" -->
+<div class="container">
+    <div class="line"></div>
+</div>
+
+<div class="container">
+    <!-- Applicant Entity -->
+    <div class="entity">Applicant</div>
+    <div class="h-line"></div>
+    <!-- Applies For Relationship -->
+    <div class="relationship" data-text="Applies For"></div>
+    <div class="h-line"></div>
+    <!-- Learner's Permit Entity -->
+    <div class="entity">Learner's Permit</div>
+</div>
+
+<!-- Connection Line to "Takes" -->
+<div class="container">
+    <div class="line"></div>
+</div>
+
+<div class="container">
+    <!-- Test Entity -->
+    <div class="entity">Test</div>
+    <div class="h-line"></div>
+    <!-- Takes Relationship -->
+    <div class="relationship" data-text="Takes"></div>
+    <div class="h-line"></div>
+    <!-- Permanent License Entity -->
+    <div class="entity">Permanent License</div>
+</div>
+
+<!-- Attributes of Applicant -->
+<div class="container">
+    <div class="attribute">Applicant ID</div>
+    <div class="attribute">Name</div>
+    <div class="attribute">Address</div>
+    <div class="attribute">Date of Birth</div>
+</div>
+
+<!-- Attributes of Learner's Permit -->
+<div class="container">
+    <div class="attribute">Permit Number</div>
+    <div class="attribute">Issue Date</div>
+    <div class="attribute">Expiry Date</div>
+</div>
+
+<!-- Attributes of Test -->
+<div class="container">
+    <div class="attribute">Test ID</div>
+    <div class="attribute">Date</div>
+    <div class="attribute">Result</div>
+</div>
+
+<!-- Attributes of Permanent License -->
+<div class="container">
+    <div class="attribute">License Number</div>
+    <div class="attribute">Issue Date</div>
+    <div class="attribute">Expiry Date</div>
+</div>
+
+</body>
+</html>

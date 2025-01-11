@@ -1,0 +1,77 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Styling for entity (rectangle) */
+.entity {
+    width: 160px;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Styling for attribute (oval) */
+.attribute {
+    width: 140px;
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    background-color: #ffecb3;
+    font-style: italic;
+}
+
+/* Styling for relationship (diamond) */
+.relationship {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #add8e6;
+    margin: 10px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+/* Text inside the relationship (diamond) */
+.relationship::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+/* Connecting lines (using simple borders) */
+.line {
+    height: 50px;
+    width: 2px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+/* Horizontal lines */
+.h-line {
+    height: 2px;
+    width: 50px;
+    background-color: black;
+    display: inline-block;
+    position: relative;
+    top: 35px;
+}
+
+.container {
+    text-align: center;
+    margin-bottom: 40px;
+}
